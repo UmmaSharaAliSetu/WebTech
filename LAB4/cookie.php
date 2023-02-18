@@ -23,24 +23,21 @@ if (isset($_COOKIE['color'])) {
   <h1> Cookie Example</h1>
 	<p>Time zone: Asia/Dhaka</p>
 	<hr>
-    <br>
-    <h3>Set Cookie</h3>
-    <br>
+    	<br>
+   	<h3>Set Cookie</h3>
+   	<br>
 	<hr>
     <form method="POST">
         <label for="color">Select a color:</label>
         <input type="color" name="color" id="color" value="<?php echo $color; ?>">
-
-        <br><br>
-
+        <br>
+	<br>
         <label for="expire_time">Expire on:</label>
         <input type="datetime-local" name="expire_time" id="expire_time" value="<?php echo date('Y-m-d\TH:i', time()); ?>">
-
-        <br><br>
-
+        <br>
         <button type="submit">Set Cookie</button>
     </form>
-	  <hr>
+	<hr>
     <h3>Destroy Cookie</h3>
     <br>
     <hr>
